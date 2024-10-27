@@ -1,0 +1,16 @@
+# Pido al usuario que introduzca dos numeros 2-10
+num1 = int(input("Introduce num1 (2-10)"))
+num2 = int(input("Introduce num2 (2-10)"))
+resultado = num1 * num2 #resultado correcto
+
+# Pedir al usuario que introduzca el resultado
+respuesta = int(input(f"¿Cuál es el resultado de {num1} * {num2}? "))
+
+#Comprobamos numeros 2-10
+if 2 <= num1 <= 10 and 2 <= num2 <= 10:
+# Verificar resultado
+    if respuesta == resultado:
+        print("Enhorabuena! \n Respuesta correcta!")
+    else:
+        print(f"No es correcta. La respuesta correcta es {resultado}.")
+else: print("Introduce numeros correctos")
