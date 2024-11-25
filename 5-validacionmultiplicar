@@ -2,6 +2,10 @@
 num1 = int(input("Introduce num1 (2-10)"))
 num2 = int(input("Introduce num2 (2-10)"))
 resultado = num1 * num2 #resultado correcto
+#PARA DAR Un nUMERO aleatoriO: 
+import random 
+num3 = random.randrange(2,11) #Nos dará un numero 2-10
+num4 = random.randrange(2,11)
 
 # Pedir al usuario que introduzca el resultado
 respuesta = int(input(f"¿Cuál es el resultado de {num1} * {num2}? "))
@@ -14,3 +18,4 @@ if 2 <= num1 <= 10 and 2 <= num2 <= 10:
     else:
         print(f"No es correcta. La respuesta correcta es {resultado}.")
 else: print("Introduce numeros correctos")
+
